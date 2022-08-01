@@ -1,3 +1,3 @@
-export const thenService = (res) => {
-  res.status(200).send("Lesson created");
+export const thenService = (res, message) => {
+  res.status(200).send(message);
 };
