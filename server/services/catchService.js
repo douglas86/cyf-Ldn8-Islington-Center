@@ -1,3 +1,3 @@
-export const catchService = (res, err) => {
-  res.status(500).json(err);
+export const catchService = async (res, err) => {
+  await res.status(500).json(err);
 };

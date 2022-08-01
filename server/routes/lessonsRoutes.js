@@ -1,5 +1,11 @@
 import express from "express";
-import { del, get, post, put } from "../controllers/lessonsControllers.js";
+import {
+  del,
+  get,
+  getById,
+  post,
+  put,
+} from "../controllers/lessonsControllers.js";
 
 const router = express.Router();
 
