@@ -1,7 +1,9 @@
+import Header from "../organism/Header";
+
 const Layout = ({ children }) => {
   return (
     <div>
-      <h1>Layout</h1>
+      <Header />
       <main>{children}</main>
     </div>
   );
