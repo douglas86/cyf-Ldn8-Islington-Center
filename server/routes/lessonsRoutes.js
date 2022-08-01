@@ -1,18 +1,7 @@
 import express from "express";
-import dotenv from "dotenv";
-dotenv.config();
-
-import pkg from "pg";
+import { pool } from "../lib/pool.js";
 
 const router = express.Router();
-const { Pool } = pkg;
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,
-  },
-});
 
 router.post("/", (req, res) => {
   const { title, img_url, intro, summary, content, video_url } = req.body;
