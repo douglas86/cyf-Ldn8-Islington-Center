@@ -1,7 +1,7 @@
 .showcase {
   margin: 0;
   padding: 0;
-  background: url("../assets/hero-img.webp") no-repeat center/cover;
+  background: url("../../assets/hero-img.webp") no-repeat center/cover;
   width: 100%;
   height: 80vh;
   overflow-y: hidden;
