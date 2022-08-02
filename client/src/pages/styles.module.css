@@ -29,12 +29,12 @@
   margin-bottom: 0;
 }
 
-.home-content {
+.home_content {
   padding: 50px 250px;
 }
 
 @media screen and (max-width: 1600px) {
-  .home-content {
+  .home_content {
     padding: 50px 80px;
   }
   .showcase .container {
@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 580px) {
-  .home-content {
+  .home_content {
     padding: 50px 30px;
   }
 
