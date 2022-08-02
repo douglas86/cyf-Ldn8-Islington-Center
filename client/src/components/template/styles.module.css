@@ -1,0 +1,21 @@
+.lesson_content {
+  margin: 15px auto 0;
+  padding: 15px;
+  max-width: 1400px;
+  min-height: 100vh;
+}
+
+.lesson_details_body {
+  margin: 15px auto 0;
+  padding: 10px 200px;
+  max-width: 1400px;
+  align-items: center;
+}
+
+.markdown {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}

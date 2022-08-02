@@ -18,8 +18,6 @@ const Cards = () => {
       .catch((err) => console.log("err", err));
   }, []);
 
-  console.log("lessons", lessons);
-
   return (
     <div className={styles.cardContainer}>
       {Object.entries(lessons).map(([keys, values]) => (
