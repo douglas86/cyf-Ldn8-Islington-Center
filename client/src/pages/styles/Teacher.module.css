@@ -1,0 +1,27 @@
+.lesson_plan {
+  width: 50vw;
+  margin: 3% 25%;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.add_content,
+.add_questions {
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px none rgb(214, 214, 225);
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  gap: 8em;
+  padding: 1rem;
+  margin-bottom: 2%;
+  justify-content: center;
+  background-image: linear-gradient(rgba(2, 27, 40, 0), #14516b);
+}
+
+.buttons {
+  border: none;
+  background-color: transparent;
+}
