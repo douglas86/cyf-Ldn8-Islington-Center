@@ -1,7 +1,9 @@
+import Form from "../organism/Form";
+
 const AddLessons = () => {
   return (
     <div>
-      <h1>AddLessonsTemplate</h1>
+      <Form />
     </div>
   );
 };
