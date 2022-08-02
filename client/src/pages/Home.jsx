@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import MarkDown from "markdown-to-jsx";
 
-import styles from "./styles.module.css";
+import styles from "./styles/Home.module.css";
 
 const Home = () => {
   const [landing, setLanding] = useState("");

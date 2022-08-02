@@ -1,7 +1,11 @@
+import Cards from "../components/organism/Cards";
+import { toHeading } from "../components/atom/toHeading";
+
 const Lessons = () => {
   return (
     <div>
-      <h1>Lessons</h1>
+      {toHeading("Lessons")}
+      <Cards />
     </div>
   );
 };
