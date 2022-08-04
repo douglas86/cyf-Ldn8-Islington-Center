@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 const Handlers = () => {
   const [state, setState] = useState({
@@ -12,7 +13,10 @@ const Handlers = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("event");
+    axios
+      .post(`${process.env.REACT_APP_URL}/lessons`, state)
+      .then(() => (window.location = "/teacher"))
+      .catch((err) => console.log("err", err));
   };
 
   const handleInputChange = (event, name) => {

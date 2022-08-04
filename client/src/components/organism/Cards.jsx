@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import { cards } from "../molecule/cards";
+import { lessonsCards, teachersCards } from "../molecule/cards";
 import { spinner } from "../atom/spinner";
 
 import styles from "./styles.module.css";
 
 const Cards = () => {
   const [lessons, setLessons] = useState({});
+  const path = window.location.pathname;
 
   useEffect(() => {
     axios
@@ -20,11 +21,15 @@ const Cards = () => {
 
   return (
     <div className={styles.cardContainer}>
-      {Object.entries(lessons).map(([keys, values]) => (
-        <div key={keys} className={styles.card}>
-          {values ? cards(values) : spinner()}
-        </div>
-      ))}
+      {lessons
+        ? Object.entries(lessons).map(([keys, values]) => (
+            <div key={keys} className={styles.card}>
+              {path === "/teacher"
+                ? teachersCards(values)
+                : lessonsCards(values)}
+            </div>
+          ))
+        : spinner()}
     </div>
   );
 };

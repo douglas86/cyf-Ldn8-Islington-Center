@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import AddQuestions from "../components/template/AddQuestions";
 import AddLessons from "../components/template/AddLessons";
+import Cards from "../components/organism/Cards";
 import { toHeading } from "../components/atom/toHeading";
 
 import styles from "./styles/Teacher.module.css";
@@ -53,6 +54,7 @@ const Teacher = () => {
         </button>
       </div>
       {visibleLessons && <AddLessons />}
+      <Cards />
     </div>
   );
 };
