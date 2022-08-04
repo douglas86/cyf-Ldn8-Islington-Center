@@ -3,7 +3,7 @@ import { toTitle } from "../atom/toTitle";
 
 import styles from "./styles.module.css";
 
-const Form = () => {
+const Form = ({ value }) => {
   const { handleSubmit, handleInputChange, handleStates } = Handlers();
 
   return (
@@ -14,6 +14,7 @@ const Form = () => {
             <input
               className={styles.input}
               placeholder={toTitle(items.toString())}
+              value={value}
               onChange={(event) =>
                 handleInputChange(event, items.toString().split(",")[0])
               }
